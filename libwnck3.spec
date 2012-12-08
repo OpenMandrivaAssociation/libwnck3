@@ -11,12 +11,12 @@
 
 Summary:	Libwnck is Window Navigator Construction Kit
 Name:		libwnck3
-Version:	3.4.2
+Version:	3.4.4
 Release:	1
 License:	LGPLv2+
 Group:		System/Libraries
 URL:		http://www.gnome.org/
-Source0:	http://download.gnome.org/sources/%{oname}/%{url_ver}/%{oname}-%{version}.tar.xz
+Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/libwnck/%{url_ver}/%{oname}-%{version}.tar.xz
 
 BuildRequires:	gnome-common
 BuildRequires:	gtk-doc
@@ -96,4 +96,27 @@ rm -rf %{buildroot}%{_datadir}/locale/{io,be@latin,bn_IN,si,uz@cyrillic}
 %{_libdir}/pkgconfig/*
 %{_datadir}/gir-1.0/Wnck-%{api}.gir
 %doc %{_datadir}/gtk-doc/html/libwnck-3.0
+
+
+
+%changelog
+* Tue Nov 13 2012 Arkady L. Shane <ashejn@rosalab.ru> 3.4.4-1
+- update to 3.4.4
+
+* Tue May 15 2012 Götz Waschk <waschk@mandriva.org> 3.4.2-1
++ Revision: 798956
+- update to new version 3.4.2
+
+* Sat Apr 28 2012 Matthew Dawkins <mattydaw@mandriva.org> 3.4.0-1
++ Revision: 794327
+- new version 3.4.0
+
+* Sat Nov 19 2011 Matthew Dawkins <mattydaw@mandriva.org> 3.2.1-2
++ Revision: 731720
+- rebuild for new gobject-introspec
+- cleaned up spec
+
+* Tue Nov 01 2011 Matthew Dawkins <mattydaw@mandriva.org> 3.2.1-1
++ Revision: 708126
+- imported package libwnck3
 

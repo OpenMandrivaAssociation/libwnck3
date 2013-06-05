@@ -1,17 +1,17 @@
 %define url_ver	%(echo %{version}|cut -d. -f1,2)
 
-%define oname		libwnck
-%define api_version	3
-%define major		0
-%define api		%{api_version}.0
+%define oname libwnck
+%define api_version 3
+%define major 0
+%define api %{api_version}.0
 
-%define libname		%mklibname wnck %{api_version} %{major}
-%define girname		%mklibname wnck-gir %{api}
-%define develname	%mklibname -d wnck %{api_version}
+%define libname %mklibname wnck %{api_version} %{major}
+%define girname %mklibname wnck-gir %{api}
+%define develname %mklibname -d wnck %{api_version}
 
 Summary:	Libwnck is Window Navigator Construction Kit
 Name:		libwnck3
-Version:	3.4.4
+Version:	3.4.5
 Release:	1
 License:	LGPLv2+
 Group:		System/Libraries
@@ -72,7 +72,6 @@ for writing pagers and taskslists and stuff.
 %make 
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
 find %{buildroot} -name '*.la' -exec rm -f {} ';'

@@ -11,7 +11,7 @@
 
 Summary:	Libwnck is Window Navigator Construction Kit
 Name:		libwnck3
-Version:	3.24.1
+Version:	3.30.0
 Release:	1
 License:	LGPLv2+
 Group:		System/Libraries

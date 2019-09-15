@@ -91,5 +91,4 @@ rm -rf %{buildroot}%{_datadir}/locale/{io,be@latin,bn_IN,si,uz@cyrillic}
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/*
 %{_datadir}/gir-1.0/Wnck-%{api}.gir
-%doc %{_datadir}/gtk-doc/html/libwnck-%{api}
 

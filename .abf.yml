@@ -1,8 +1,2 @@
-removed_sources:
-  libwnck-3.4.5.tar.xz: 955e7a2d33a4bcd7fe11b91a0948cdfcc6680fa2
-  libwnck-3.4.7.tar.xz: 109c7b312442c66f13c1ef3465e882446906d13e
-  libwnck-3.4.9.tar.xz: 2309407f92b70352d580b960a42b8014f9765ce2
-  libwnck-3.14.0.tar.xz: c763b4e38aaf78dcc605b409575d24d9c0f8c32c
 sources:
-  libwnck-3.24.1.tar.xz: 5c16cd0c63022cfa7cf2f824d037482cfbd9068b
-  libwnck-3.30.0.tar.xz: 872ae099ab27e4a7fcf82f569bb261c0a00be920
+  libwnck-3.32.0.tar.xz: 0f8f37b72c45499c328402f921e86c3d0abb2e28

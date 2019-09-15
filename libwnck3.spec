@@ -11,13 +11,14 @@
 
 Summary:	Libwnck is Window Navigator Construction Kit
 Name:		libwnck3
-Version:	3.30.0
-Release:	2
+Version:	3.32.0
+Release:	1
 License:	LGPLv2+
 Group:		System/Libraries
 Url:		http://www.gnome.org/
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/libwnck/%{url_ver}/%{oname}-%{version}.tar.xz
 
+BuildRequires:	meson
 BuildRequires:	gnome-common
 BuildRequires:	gtk-doc
 BuildRequires:	intltool
@@ -66,13 +67,12 @@ for writing pagers and taskslists and stuff.
 %setup -qn %{oname}-%{version}
 
 %build
-%configure2_5x \
-	--disable-static
-
-%make 
+%meson
+%meson_build
 
 %install
-%makeinstall_std
+%meson_install
+
 rm -rf %{buildroot}%{_datadir}/locale/{io,be@latin,bn_IN,si,uz@cyrillic}
 %find_lang libwnck-3.0
 
@@ -91,5 +91,4 @@ rm -rf %{buildroot}%{_datadir}/locale/{io,be@latin,bn_IN,si,uz@cyrillic}
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/*
 %{_datadir}/gir-1.0/Wnck-%{api}.gir
-%doc %{_datadir}/gtk-doc/html/libwnck-%{api}
 
